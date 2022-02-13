@@ -5,6 +5,10 @@ public class Main {
         int month, day;
         Scanner input = new Scanner(System.in);
 
+        String horoscope = "";
+        boolean isError = false;
+
+
         System.out.print("Doğduğunuz Ay : ");
         month = input.nextInt();
 
@@ -15,147 +19,153 @@ public class Main {
             day = input.nextInt();
             if (day >= 1 && day <= 31) {
                 if (day <= 21) {
-                    System.out.println("Oğlak Burcu");
+                    horoscope = "Oğlak";
                 } else {
-                    System.out.println("Kova Burcu");
+                    horoscope = "Kova";
                 }
             } else {
-                System.out.println("Geçersiz Bir Gün Girdiniz");
+                isError = true;
             }
         } else if (month == 2) {
             System.out.print("Doğduğunuz Gün : ");
             day = input.nextInt();
             if (day >= 1 && day <= 28) {
                 if (day <= 19) {
-                    System.out.println("Kova Burcu");
+                    horoscope = "Kova";
                 } else {
-                    System.out.println("Balık Burcu");
+                    horoscope = "Balık";
                 }
             } else {
-                System.out.println("Geçersiz Bir Gün Girdiniz");
+                isError = true;
             }
         } else if (month == 3) {
             System.out.print("Doğduğunuz Gün : ");
             day = input.nextInt();
             if (day >= 1 && day <= 31) {
                 if (day <= 20) {
-                    System.out.println("Balık Burcu");
+                    horoscope = "Balık";
                 } else {
-                    System.out.println("Koç Burcu");
+                    horoscope = "Koç";
                 }
             } else {
-                System.out.println("Geçersiz Bir Gün Girdiniz");
+                isError = true;
             }
         } else if (month == 4) {
             System.out.print("Doğduğunuz Gün : ");
             day = input.nextInt();
             if (day >= 1 && day <= 30) {
                 if (day <= 20) {
-                    System.out.println("koç Burcu");
+                    horoscope = "Koç";
                 } else {
-                    System.out.println("Boğa Burcu");
+                    horoscope = "Boğa";
                 }
             } else {
-                System.out.println("Geçersiz Bir Gün Girdiniz");
+                isError= true;
             }
         } else if (month == 5) {
             System.out.print("Doğduğunuz Gün : ");
             day = input.nextInt();
             if (day >= 1 && day <= 31) {
                 if (day <= 21) {
-                    System.out.println("Boğa Burcu");
+                    horoscope = "Boğa";
                 } else {
-                    System.out.println("İkizler Burcu");
+                    horoscope = "ikizler";
                 }
             } else {
-                System.out.println("Geçersiz Bir Gün Girdiniz");
+                isError = true;
             }
         } else if (month == 6) {
             System.out.print("Doğduğunuz Gün : ");
             day = input.nextInt();
             if (day >= 1 && day <= 30) {
                 if (day <= 22) {
-                    System.out.println("İkizler Burcu");
+                    horoscope = "İkizler";
                 } else {
-                    System.out.println("Yengeç Burcu");
+                    horoscope = "Yengeç";
                 }
             } else {
-                System.out.println("Geçersiz Bir Gün Girdiniz");
+                isError = true;
             }
         } else if (month == 7) {
             System.out.print("Doğduğunuz Gün : ");
             day = input.nextInt();
             if (day >= 1 && day <= 31) {
                 if (day <= 22) {
-                    System.out.println("Yengeç Burcu");
+                    horoscope = "Yengeç";
                 } else {
-                    System.out.println("Aslan Burcu");
+                    horoscope = "Aslan";
                 }
             } else {
-                System.out.println("Geçersiz Bir Gün Girdiniz");
+                isError = true;
             }
         } else if (month == 8) {
             System.out.print("Doğduğunuz Gün : ");
             day = input.nextInt();
             if (day >= 1 && day <= 31) {
                 if (day <= 22) {
-                    System.out.println("Aslan Burcu");
+                    horoscope = "Aslan";
                 } else {
-                    System.out.println("Başak Burcu");
+                    horoscope = "Başak";
                 }
             } else {
-                System.out.println("Geçersiz Bir Gün Girdiniz");
+                isError = true;
             }
         } else if (month == 9) {
             System.out.print("Doğduğunuz Gün : ");
             day = input.nextInt();
             if (day >= 1 && day <= 30) {
                 if (day <= 22) {
-                    System.out.println("Başak Burcu");
+                    horoscope = "Başak";
                 } else {
-                    System.out.println("Terazi Burcu");
+                    horoscope = "Terazi";
                 }
             } else {
-                System.out.println("Geçersiz Bir Gün Girdiniz");
+                isError = true;
             }
         } else if (month == 10) {
             System.out.print("Doğduğunuz Gün : ");
             day = input.nextInt();
             if (day >= 1 && day <= 31) {
                 if (day <= 22) {
-                    System.out.println("Terazi Burcu");
+                    horoscope = "Terazi";
                 } else {
-                    System.out.println("Akrep Burcu");
+                    horoscope = "Akrep";
                 }
             } else {
-                System.out.println("Geçersiz Bir Gün Girdiniz");
+                isError = true;
             }
         } else if (month == 11) {
             System.out.print("Doğduğunuz Gün : ");
             day = input.nextInt();
             if (day >= 1 && day <= 30) {
                 if (day <= 21) {
-                    System.out.println("Akrep Burcu");
+                    horoscope = "Akrep";
                 } else {
-                    System.out.println("Yay Burcu");
+                    horoscope = "Yay";
                 }
             } else {
-                System.out.println("Geçersiz Bir Gün Girdiniz");
+                isError = true;
             }
         } else if (month == 12) {
             System.out.print("Doğduğunuz Gün : ");
             day = input.nextInt();
             if (day >= 1 && day <= 31) {
                 if (day <= 21) {
-                    System.out.println("Yay Burcu");
+                    horoscope = "Yay";
                 } else {
-                    System.out.println("Oğlak Burcu");
+                    horoscope = "Oğlak";
                 }
             } else {
-                System.out.println("Geçersiz Bir Gün Girdiniz");
+                isError =true;
             }
         } else {
-            System.out.println("Geçersiz Bir Ay Girdiniz!");
+            isError = true;
+        }
+
+        if (isError){
+            System.out.println("Geçersiz Bir Değer Girdiniz! Tekrar Deneyiniz..");
+        }else {
+            System.out.println("Burcunuz " +horoscope);
         }
 
 
